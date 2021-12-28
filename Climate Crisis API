@@ -59,10 +59,9 @@ app.get('/news/:newspaperID', async(req, res) => {
 
     const newspaperAddress = newspapers.filter(newspaper => newspaper.name == newspaperId)[0].address
 
-    const newspaperBase = newspapers.filter(newspaper => newspaper.name == newspaperID)[0].base
+    console.log(newspaperAddress)
 
-    axios.get(newspaperAddress)
-        .then(response => {})
+    //axios.get()
 })
 
 app.listen(PORT, () => console.log(`server running on PORT ${PORT}`))
